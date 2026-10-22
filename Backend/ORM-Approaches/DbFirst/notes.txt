@@ -1,0 +1,8 @@
+Scaffolding Commands:
+    Scaffold-DbContext Data Source=.;Initial Catalog=ITI;Integrated Security=True;Encrypt=True;Trust Server Certificate=True Microsoft.EntityFrameworkCore.SqlServer -OutputDir Models
+
+EF Core Power Tools:
+    https://marketplace.visualstudio.com/items?itemName=ErikEJ.EFCorePowerTools
+
+Scaffolding (Reverse Engineering) Article:
+    https://learn.microsoft.com/en-us/ef/core/managing-schemas/scaffolding/?tabs=dotnet-core-cli

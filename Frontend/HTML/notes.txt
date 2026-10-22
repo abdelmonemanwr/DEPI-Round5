@@ -1,0 +1,20 @@
+HTML: Hyper Text Markup lang. <>
+tag tagname
+<img src="image.jpg" alt="Description" />
+
+// block elements (100% width)
+
+
+// inline elements
+
+
+/*
+(int age, string email) {
+  // Function body
+}
+
+*/
+
+http://127.0.0.1:5500/thanks.html?fname=men3m&pass=1123&age=22&email=abdelmonemanwr7777%40gmail.com&courses=HTML&gender=0&pass=1123&age=22&email=abdelmonemanwr7777%40gmail.com&courses=HTML&gender=0&pass=1123&age=22&email=abdelmonemanwr7777%40gmail.com&courses=HTML&gender=0&pass=1123&age=22&email=abdelmonemanwr7777%40gmail.com&courses=HTML&gender=0
+
+
