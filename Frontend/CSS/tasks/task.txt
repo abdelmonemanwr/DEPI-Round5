@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>CSS Selectors Challenge</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <h2>CSS Selectors & Specificity Challenge</h2>
+    <p class="intro">This is a normal paragraph.</p>
+    
+    <ul>
+        <li>Item 1</li>
+        <li>Item 2</li>
+        <li>Item 3</li>
+        <li>Item 4</li>
+    </ul>
+
+    <div class="form-group">
+        <input type="text" placeholder="Username (Text)">
+        <input type="password" placeholder="Password">
+        <button>Submit</button>
+    </div>
+</body>
+</html>

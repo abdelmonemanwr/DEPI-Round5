@@ -1,0 +1,236 @@
+/* h1{
+    color: green;
+    font-size: 30px;
+}
+
+span{
+    color: blue;
+}
+
+.items{
+    background-color: lightgray;
+    color: blue;
+} */
+
+/* Reset default styles using universal selector */
+/* *{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+} */
+
+
+/* #myP1{
+    color:red;
+}
+
+p, h1{
+    color:blue;
+}
+
+.inside-p, .inside-span {
+    color: green;
+}
+
+div span{
+    background-color: yellow;
+}
+
+div > span{
+    background-color: lightblue;
+}
+
+span ~ p{
+    background-color: lightcoral;
+}
+
+span + p{
+    background-color: lightgreen;
+} */
+
+/* background-color: lightcoral !important; */
+
+/* #container .inside-p span{
+    color: blue;
+}
+
+#inside-id-span{
+    color:red;
+} 
+
+p.inside-p {
+    color: red;
+} 
+p .inside-p {
+    color: blue;
+}
+
+p .inside-span {
+    color: blue;
+}
+*/
+
+/* specificity: 100 */
+/* #myspan{
+    color:yellow;
+}
+*/
+/* specificity: 210 */
+/*
+#container .myclass #myspan{
+    color: blue;
+}
+*/
+/* specificity: 200 */
+/*
+#container > #myspan{
+    color: red;
+} */
+
+
+/* specificity: 100 */
+/* #myspan{
+    color:magenta;
+} */
+/* specificity: 110 */
+/* #myspan:hover{
+    background-color:black;
+} */
+
+/* li:nth-child(1){
+    background-color: lightgray;
+}
+
+li:nth-child(2){
+    background-color: lightblue;
+} */
+
+/* li:nth-child(even){
+    background-color: lightgray;
+}
+
+li:nth-child(odd){
+    background-color: lightblue;
+} */
+
+
+/* ---------------------------------------------- */
+/* @font-face{
+    font-family: 'Handcaps';
+    src: url('./../fonts/handcaps/Handcaps.otf') format('opentype');
+} */
+
+
+
+/* .myclass{ */
+    /* color:blue; */
+    /* color: rgb(20, 200, 200); */
+    /* color: #14F8C8; 
+    font-family: 'Handcaps', 'Courier New', 'Courier';
+    font-size: 16px; */
+    /* font-size: 1em; */
+    /* font-size: 2rem; */
+    /* font-size: 10vw; */
+    /* font-size: 10vh; */
+
+    /* font-weight: 900;
+    font-style: oblique;  */
+    /* short hand property */
+    /* font: italic bold 16px 'Courier New', 'Courier', 'Handcaps';   */
+/* } */
+
+
+
+/* #container{ */
+    /* border: 3px dashed red; */
+    /* border: 3px dotted red; */
+    /* border: 3px solid red;
+    border-radius: 15px; */
+    /* border-radius: 50%; */
+    /* margin: 10px;*/
+    /* margin: 10px 20px; */
+    /* margin: 10px 20px 30px 40px; */
+    /* padding: 40px; */
+    /* padding: 20px 40px; */
+    /* padding: 10px 20px 30px 40px; */
+    /* width: 400px; */
+    /* total width: 400px + 40px + 40px + 3px + 3px= 486px */
+    /* height: 400px; */
+    /* total height: 200px + 20px + 20px + 3px + 3px= 246px  */
+
+    /* box-sizing: border-box; */
+
+    /* text-align: center; */
+
+    /* background-color: lightblue; */
+    /* background-image: url('./../HTML/assets/coffee.jpg'); 
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;*/
+    /* background-position: 5% 0%; */
+/* } */
+
+
+
+/* --------------------------------------------------- */
+
+
+/* #main{
+    border: 3px solid red;
+    background-color: lightblue;
+    height: 450px; */
+    /* position: relative; */
+    /* 
+}
+
+#main div{
+    height: 150px;
+} */
+
+/* .div1{
+    background-color: chartreuse; */
+    /* position: fixed;
+    top: 10px;
+    left: 20px;
+    width: 100%; */
+
+    /* position: absolute;
+    top: 20px;
+    left:20px;
+    width: 80%; */
+/* } */
+
+/* .div2{
+    background-color: lightcoral; */
+    /* position: relative;
+    top: 100px;
+    left: 20px; */
+/* }  */
+
+
+/* --------------------------- */
+
+/* #myspan1{
+    background-color:aqua;
+    display: inline-block;
+    width: 200px;
+    height: 150px;
+    text-decoration: overline;
+}
+*/
+
+
+
+/* a{ */
+    /* text-decoration: underline  ; */
+    /* text-decoration: line-through; */
+    /* text-decoration: overline; */
+    /* text-decoration: none;
+    color: inherit;
+} */
+
+
+/* 
+[id]{
+    background-color: red;
+} */

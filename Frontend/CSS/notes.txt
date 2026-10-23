@@ -1,0 +1,31 @@
+> Default Style
+> Internal Style
+> External Style
+> Inline Style 
+
+
+selectors
+  using 
+    1. tag name
+    2. class name
+    3. universal selector
+    4. combination selectors
+    5. Relative selectors
+    6. Pseudo-class selectors
+    7. Attribute Selector
+
+specificity
+
+font size
+   1. pt
+   2. px
+   3. em    1em = 16px
+   4. rem   1rem = 100% root element
+   5. vw
+   6. vh
+
+
+positions
+  1. fixed
+  2. relative
+  3. absolute

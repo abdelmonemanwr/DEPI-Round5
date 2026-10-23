@@ -1,0 +1,23 @@
+optional task
+
+1. Requirements (Apply in CSS):
+
+1. Tag & Class Selectors:
+- Change h2 color to blue.
+- Change .intro font size to 18px.
+
+2. Attribute Selectors:
+- Change border color of input[type="text"] to green.
+- Change border color of input[type="password"] to red.
+
+3. Pseudo-classes:
+- Add :hover to button (background: black, color: white).
+- Use :nth-child(even) on <li> to change background color to lightgray.
+
+4. Specificity Test:
+- Add p { color: green; } and .intro { color: red; }
+- Which color will be applied and why?
+
+
+2. practice on something like that: https://startbootstrap.com/template/shop-homepage  
+       or anyother website you like
