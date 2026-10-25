@@ -4,4 +4,4 @@ Solve the following problems:
   > 2.1
   > 2.2
 
-make sure to upload them to lms
+make sure to upload only one file with extension ".js" (e.g, main.js) to LMS.
