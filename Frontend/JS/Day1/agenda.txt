@@ -1,0 +1,15 @@
+History JS
+Where should we write JS code
+Variables
+Data types
+Arthemitic operators
+Comparisons
+Logical Operators
+Short Circuit
+Conditions
+Loops
+How to take input from user
+document.WriteLn
+alert
+confirm
+[string apis]
