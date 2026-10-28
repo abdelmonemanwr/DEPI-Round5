@@ -1,0 +1,7 @@
+functions
+  - function statement (function declaration)
+  - function expression
+
+objects
+dom
+[String, Math, Array]
