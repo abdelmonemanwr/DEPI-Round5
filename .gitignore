@@ -1,0 +1,18 @@
+# Ignore Visual Studio directories & files
+.vs/
+**/.vs/
+
+# Ignore bin and obj folders anywhere in the project
+[Bb]in/
+[Oo]bj/
+**/[Bb]in/
+**/[Oo]bj/
+
+# User-specific files & cache
+*.rsuser
+*.suo
+*.user
+*.userprefs
+*.lock.json
+*.cache
+*AssemblyInfo.cs

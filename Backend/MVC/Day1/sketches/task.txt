@@ -1,0 +1,19 @@
+assignment  (in memory db)
+  > Model 
+       - Product.cs  
+           * Id
+           * Name
+           * Price
+           * ImageUrl
+           * IsDeleted
+       - Product Repository
+           * GetallProducts
+           * GetProductById
+
+  >> localhost:port/product/getallproducts
+  >> localhost:port/product/getproductbyid/5
+  >> localhost:port/product/getproductbyid?id=5
+
+bonus: anchor tag: <a href="home/index">back to list</a>
+bonus2: wonderful style
+bonus3: ef core
