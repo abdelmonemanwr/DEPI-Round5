@@ -1,16 +1,20 @@
-﻿<table class="table table-bordered table-hover">
+﻿@* @model type *@
+@* @using CompanyPro.Models *@
+@model List<Employee>
+
+<table class="table table-bordered table-hover">
     <tr>
         <th>Id</th>
         <th>Name</th>
         <th>DeptId</th>
         <th>Image</th>
     </tr>
-    @foreach (Employee emp in Model)
+    @foreach (var emp in Model)
     {
         <tr>
             <td>@emp.Id</td>
             <td>@emp.Name</td>
-            <td>@emp.DeptId</td>
+            <td>@emp.Department.Name</td>
             <td><img style="width:50px;height:50px;" src="/assets/@emp.ImageUrl" /></td>
         </tr>
     }

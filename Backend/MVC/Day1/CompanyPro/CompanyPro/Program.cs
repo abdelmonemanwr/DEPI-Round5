@@ -1,3 +1,6 @@
+using CompanyPro.Enums;
+using CompanyPro.Repositories;
+
 namespace CompanyPro
 {
     public class Program
@@ -8,6 +11,10 @@ namespace CompanyPro
 
             // Add services to the container.
             builder.Services.AddControllersWithViews();
+
+            builder.Services.AddScoped<DepartmentRepository>();
+            //builder.Services.AddScoped<IPaymentProvider, PayPalPaymentProvider>(PaymentProviderEnum.PayPal);
+            //builder.Services.AddScoped<IPaymentProvider, VodafonePaymentProvider>(PaymentProviderEnum.VodafoneCash);
 
             var app = builder.Build();
 

@@ -1,4 +1,4 @@
-﻿using CompanyPro.Models;
+﻿using CompanyPro.Repositories;
 using Microsoft.AspNetCore.Mvc;
 
 namespace CompanyPro.Controllers
@@ -34,6 +34,18 @@ namespace CompanyPro.Controllers
         {
             var view = new ViewResult();
             view.ViewName = "myview";
+            return view;
+        }
+        public ViewResult ShowView2()
+        {
+            return CreateView("myview");
+            //return View("myview2");
+        }
+
+        private ViewResult CreateView(string viewName)
+        {
+            var view = new ViewResult();
+            view.ViewName = viewName;
             return view;
         }
 

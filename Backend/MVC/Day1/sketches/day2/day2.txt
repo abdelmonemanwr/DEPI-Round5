@@ -1,0 +1,20 @@
+Content
+  > Strong Type Views
+  > Get Data from DB using ORM (EF-Core)
+  > Loading Mechanisms
+  > Dependency Injection
+  > N+1 Query
+  > Send Data From Actions to Views (delegated to the next lecture)
+
+Eager Loading:
+    var employee = dbContext.Employees.First(e=>e.Id==5).Include(e=>e.Department.Name);
+
+Excplict Loading:
+    var employee = dbContext.Employees.FirstOrDefault(e=>e.Id==5);
+    dbContext.Entry(employee).Reference(e=>e.Department).Load(); // one related data
+
+    var department = dbContext.Department.FirstOrDefault(d=>d.Id==5);
+    dbContext.Entry(department ).Collection(e=>e.Employees).Load();  // Many related data
+
+Lazy Loading:    
+    using proxy classes
