@@ -1,0 +1,37 @@
+﻿@* @model List<CompanyPro.ViewModels.GetEmployeesViewModel> *@
+
+@* @using CompanyPro.ViewModels
+@model List<GetEmployeesViewModel> *@
+
+@model GetEmployeesViewModel
+
+<select class="form-control">
+    @foreach (var br in Model.Branches)
+    {
+        Console.WriteLine(br);
+        <option>@br</option>
+    }
+</select>
+
+<br />
+
+<p style="color:@ViewBag.Color">@ViewBag.Msg</p>
+
+<table class="table table-bordered table-hover">
+    <tr>
+        <th>Id</th>
+        <th>Name</th>
+        <th>DeptId</th>
+        <th>Image</th>
+    </tr>
+    @foreach (var emp in Model.EmpData)
+    {
+        <tr>
+            <td>@emp.Eid</td>
+            <td>@emp.EmpName</td>
+            <td>@emp.DeptName</td>
+            <td><img style="width:50px;height:50px;" src="/assets/@emp.ImageUrl" /></td>
+        </tr>
+    }
+
+</table>
