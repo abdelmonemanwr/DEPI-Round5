@@ -13,6 +13,8 @@
                 </div>
                 <div class="card-body">
                     <form action="/Department/Create" method="post">
+                        @Html.AntiForgeryToken()
+
                         @* <div class="mb-3">
                             <label for="did" class="form-label">Department ID</label>
                             <input type="text" id="did" name="did" class="form-control" placeholder="Enter department ID" />
