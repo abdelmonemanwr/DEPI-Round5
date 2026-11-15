@@ -23,11 +23,6 @@ namespace CompanyPro.Controllers
         {
             var depts = departmentRepository.GetDepartments();
 
-            //if (dept == null)
-            //{
-            //    return NotFound("Item Not Found");
-            //}
-
             return View("ShowDepartments", depts);
         }
 
