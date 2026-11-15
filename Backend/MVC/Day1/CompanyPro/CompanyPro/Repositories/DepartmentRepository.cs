@@ -1,4 +1,5 @@
 ﻿using CompanyPro.Models;
+using Microsoft.EntityFrameworkCore;
 
 namespace CompanyPro.Repositories
 {
@@ -20,9 +21,23 @@ namespace CompanyPro.Repositories
                 return null;
             }
 
+            dept.Name = "erere";
+
+
             depiContext.Entry(dept).Collection(d => d.Employees).Load();
             return dept;
         }
 
+        public List<Department> GetDepartments()
+        {
+            return depiContext.Departments.AsNoTracking().ToList();
+        }
+
+        public void CreateNewDepartment(Department department)
+        {
+            depiContext.Departments.Add(department);
+            //depiContext.Add(department);
+            depiContext.SaveChanges();
+        }
     }
 }

@@ -12,6 +12,11 @@ namespace CompanyPro
             // Add services to the container.
             builder.Services.AddControllersWithViews();
 
+            builder.Services.AddSession(opt =>
+            {
+                opt.IdleTimeout = TimeSpan.FromMinutes(30);
+            });
+
             builder.Services.AddScoped<DepartmentRepository>();
             //builder.Services.AddScoped<IPaymentProvider, PayPalPaymentProvider>(PaymentProviderEnum.PayPal);
             //builder.Services.AddScoped<IPaymentProvider, VodafonePaymentProvider>(PaymentProviderEnum.VodafoneCash);
@@ -39,6 +44,7 @@ namespace CompanyPro
             app.UseHttpsRedirection();
             app.UseRouting();
 
+            app.UseSession();
             app.UseAuthorization();
 
             app.MapStaticAssets();
