@@ -55,7 +55,7 @@ namespace CompanyPro.Controllers
 
             departmentRepository.CreateNewDepartment(department);
             //var depts = departmentRepository.GetDepartments();
-            //return View()
+            //return View("ShowDepartments", depts);
             return RedirectToAction(actionName: "GetDepartments", controllerName: "Department");
         }
 
