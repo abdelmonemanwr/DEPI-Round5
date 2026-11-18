@@ -38,10 +38,26 @@ namespace CompanyPro.Controllers
             return View("ShowDepartmentDetails", dept);
         }
 
+        // PureHTML
+        //[HttpGet]
+        //public IActionResult Create()
+        //{
+        //    return View("addNewDepartment");
+        //}
+
+
+        //// PureC#
+        //[HttpGet]
+        //public IActionResult Create()
+        //{
+        //    return View("addNewDepartment_PureC#");
+        //}
+
+        // TagHelper
         [HttpGet]
         public IActionResult Create()
         {
-            return View("addNewDepartment");
+            return View("addNewDepartment_TagHelper");
         }
 
         [HttpPost]
@@ -50,7 +66,9 @@ namespace CompanyPro.Controllers
         {
             if (ModelState.IsValid == false)
             {
-                return View("addNewDepartment", department);
+                //return View("addNewDepartment", department);
+                //return View("addNewDepartment_PureC#", department);
+                return View("addNewDepartment_TagHelper", department);
             }
 
             departmentRepository.CreateNewDepartment(department);
