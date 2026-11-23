@@ -1,0 +1,39 @@
+﻿@* @model type *@
+@* @using CompanyPro.Models *@
+@model List<Employee>
+
+@* <p>@ViewData["msg"]</p> *@
+@* <p>@ViewData["Message"]</p> *@
+@* <p>@((int)ViewData["temp"]+3)</p> *@
+@* <p>@(int.Parse(ViewData["temp"].ToString())+3)</p> *@
+
+<select class="form-control">
+    @foreach (var br in ViewData["branches"] as List<string> ?? new List<string>())
+    @* @foreach (var br in ViewData["branhces"] as List<string>) *@
+    {
+        Console.WriteLine(br);
+        <option>@br</option>
+    }
+</select>
+<br />
+
+<p style="color:@ViewBag.Color">@ViewBag.Msg</p>
+
+<table class="table table-bordered table-hover">
+    <tr>
+        <th>Id</th>
+        <th>Name</th>
+        <th>DeptId</th>
+        <th>Image</th>
+    </tr>
+    @foreach (var emp in Model)
+    {
+        <tr>
+            <td>@emp.Id</td>
+            <td>@emp.Name</td>
+            <td>@emp.Department.Name</td>
+            <td><img style="width:50px;height:50px;" src="/assets/@emp.ImageUrl" /></td>
+        </tr>
+    }
+
+</table>
